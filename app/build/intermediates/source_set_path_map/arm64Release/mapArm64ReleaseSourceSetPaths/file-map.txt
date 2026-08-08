@@ -1,0 +1,10 @@
+com.liunx.terminal.app-arm64-0 /data/data/com.termux/files/home/My_paper/terminal/app/build/generated/res/pngs/arm64/release
+com.liunx.terminal.app-arm64-1 /data/data/com.termux/files/home/My_paper/terminal/app/build/generated/res/resValues/arm64/release
+com.liunx.terminal.app-packageArm64ReleaseResources-2 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/incremental/arm64Release/packageArm64ReleaseResources/merged.dir
+com.liunx.terminal.app-packageArm64ReleaseResources-3 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/incremental/arm64Release/packageArm64ReleaseResources/stripped.dir
+com.liunx.terminal.app-arm64-4 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/merged-not-compiled-resources/arm64/release
+com.liunx.terminal.app-arm64Release-5 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/merged_res/arm64Release/mergeArm64ReleaseResources
+com.liunx.terminal.app-arm64-6 /data/data/com.termux/files/home/My_paper/terminal/app/src/arm64/res
+com.liunx.terminal.app-arm64Release-7 /data/data/com.termux/files/home/My_paper/terminal/app/src/arm64Release/res
+com.liunx.terminal.app-main-8 /data/data/com.termux/files/home/My_paper/terminal/app/src/main/res
+com.liunx.terminal.app-release-9 /data/data/com.termux/files/home/My_paper/terminal/app/src/release/res

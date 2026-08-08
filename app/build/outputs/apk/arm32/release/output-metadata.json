@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.liunx.terminal",
+  "variantName": "arm32Release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 2,
+      "versionName": "1.5-arm32",
+      "outputFile": "app-arm32-release-unsigned.apk"
+    }
+  ],
+  "elementType": "File",
+  "minSdkVersionForDexing": 16
+}

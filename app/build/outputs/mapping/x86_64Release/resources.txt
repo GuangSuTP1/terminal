@@ -1,0 +1,15 @@
+@id/input_cmd : reachable=true
+@id/output_text : reachable=true
+@id/scroll_output : reachable=true
+@layout/activity_main : reachable=true
+@string/app_name : reachable=true
+
+The root reachable resources are:
+ id:input_cmd:2130771968
+ id:output_text:2130771969
+ id:scroll_output:2130771970
+ layout:activity_main:2130837504
+ string:app_name:2130903040
+Unused resources are: 
+
+Resource shrinking did not work (grew from 2397 to 2453); using original instead

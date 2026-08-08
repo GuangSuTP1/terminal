@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.liunx.terminal",
+  "variantName": "x86_64Release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 2,
+      "versionName": "1.5-x86_64",
+      "outputFile": "app-x86_64-release-unsigned.apk"
+    }
+  ],
+  "elementType": "File",
+  "minSdkVersionForDexing": 16
+}

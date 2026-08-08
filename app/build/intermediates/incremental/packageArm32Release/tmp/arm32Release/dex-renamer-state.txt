@@ -1,0 +1,4 @@
+#Sat Aug 08 13:37:39 GMT 2026
+base.0=/data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/dex/arm32Release/minifyArm32ReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

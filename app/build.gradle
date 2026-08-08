@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+  namespace "com.liunx.terminal"
+  compileSdk 29
+
+  def baseVersionName = "1.5"
+
+  defaultConfig {
+    applicationId "com.liunx.terminal"
+    minSdk 16
+    targetSdk 28
+    versionCode 2
+    versionName "${baseVersionName}"
+  }
+
+  flavorDimensions "abi"
+  productFlavors {
+    arm32 {
+      dimension "abi"
+      ndk { abiFilters "armeabi-v7a" }
+      versionName "${baseVersionName}-arm32"
+    }
+    arm64 {
+      dimension "abi"
+      ndk { abiFilters "arm64-v8a" }
+      versionName "${baseVersionName}-arm64"
+    }
+    x86 {
+      dimension "abi"
+      ndk { abiFilters "x86" }
+      versionName "${baseVersionName}-x86"
+    }
+    x86_64 {
+      dimension "abi"
+      ndk { abiFilters "x86_64" }
+      versionName "${baseVersionName}-x86_64"
+    }
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled true
+      shrinkResources true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  lint {
+    abortOnError false
+    checkReleaseBuilds false
+    xmlReport false
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: "libs", include: ["*.jar"])
+}
