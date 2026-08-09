@@ -1,25 +1,38 @@
+terminal
 
-# terminal
+一个适用于Android(含AndroidTV)的超小型伪终端(PTY)实现
 
-一个适用于安卓的超小型伪终端（PTY）实现。
+原理
 
-## 原理
+Java层通过ProcessBuilder启动预编译的原生script二进制文件,该文件负责创建PTY(伪终端)并将/system/bin/sh绑定到其中.上层通过标准输入输出流与Shell交互,UI层负责实时回显输出.
 
-Java 层通过 ProcessBuilder 启动预编译的原生 script 二进制文件，该文件负责创建 PTY 并绑定 /system/bin/sh。上层通过标准输入输出流进行命令交互，UI 层负责回显输出。
+核心PTY逻辑由script辅助程序封装,不涉及NDK编译
 
-核心逻辑不在 NDK 层，而是封装在特定架构的 script 辅助程序中。
+架构适配
 
-## 架构适配
+支持以下四种CPU架构,通过GradleProductFlavors分别打包为独立APK：
 
-支持以下四种 CPU 架构，通过 Gradle Product Flavors 分别打包：
+·arm32
+·arm64
+·x86
+·x86_64
 
-- arm32
-- arm64
-- x86
-- x86_64
+每个架构的assets目录下包含对应架构的script可执行文件.打包时仅包含当前架构版本,以控制体积.
 
-每个架构的 assets 目录下包含对应的 script 可执行文件，打包时仅包含当前架构版本，以控制体积。
+⚠️使用前请先确定好自己机器的架构,架构不匹配会打不开软件！
 
-使用前请先确定好自己机器的架构,架构不匹配 会打不开软件!!!
+编译
 
-script 文件是预先编译好的原生二进制，负责底层 PTY 的创建与维护。如需修改其行为，需自行编译对应架构的版本并替换。
+1.准备好各架构的script二进制文件,放入对应flavor的assets目录.
+2.执行./gradlewassembleRelease编译所有架构release版本.
+3.也可单独编译某架构,如./gradlewassembleArm32Release.
+
+script二进制来源
+
+script二进制文件提取自Termux它负责创建PTY并启动交互式Shell.
+
+如需修改行为或适配其他架构,请自行编译对应架构的版本并替换.
+
+许可证
+
+本项目代码部分可自由修改使用.script二进制文件源自util-linux,遵循其原有许可证(GPL).请遵守相关开源协议.
