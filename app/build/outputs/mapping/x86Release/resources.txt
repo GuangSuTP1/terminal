@@ -12,4 +12,4 @@ The root reachable resources are:
  string:app_name:2130903040
 Unused resources are: 
 
-Resource shrinking did not work (grew from 2392 to 2448); using original instead
+Resource shrinking did not work (grew from 2330 to 2386); using original instead

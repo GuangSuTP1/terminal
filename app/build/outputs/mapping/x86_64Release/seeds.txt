@@ -1,13 +1,13 @@
-com.liunx.terminal.R$id
-com.liunx.terminal.MainActivity
 com.liunx.terminal.R$layout
+com.liunx.terminal.MainActivity
+com.liunx.terminal.R$id
 com.liunx.terminal.R$string
-com.liunx.terminal.R$id: int scroll_output
-com.liunx.terminal.R$id: int input_cmd
-com.liunx.terminal.R$id: int output_text
 com.liunx.terminal.R$string: int app_name
+com.liunx.terminal.R$id: int scroll_output
+com.liunx.terminal.R$id: int output_text
 com.liunx.terminal.R$layout: int activity_main
-com.liunx.terminal.R$layout: R$layout()
-com.liunx.terminal.R$string: R$string()
-com.liunx.terminal.R$id: R$id()
+com.liunx.terminal.R$id: int input_cmd
 com.liunx.terminal.MainActivity: MainActivity()
+com.liunx.terminal.R$id: R$id()
+com.liunx.terminal.R$string: R$string()
+com.liunx.terminal.R$layout: R$layout()

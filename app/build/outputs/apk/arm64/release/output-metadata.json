@@ -11,8 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 2,
-      "versionName": "1.5-arm64",
+      "versionCode": 3,
+      "versionName": "1.9-arm64",
       "outputFile": "app-arm64-release-unsigned.apk"
     }
   ],

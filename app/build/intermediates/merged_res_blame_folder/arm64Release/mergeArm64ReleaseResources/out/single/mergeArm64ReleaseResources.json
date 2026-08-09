@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/9.6.1/com.liunx.terminal.app-arm64Release-5:/layout_activity_main.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/9.6.1/com.liunx.terminal.app-main-8:/layout/activity_main.xml"
+    },
+    {
         "merged": "com.liunx.terminal.app-arm64Release-5:/layout_activity_main.xml.flat",
         "source": "com.liunx.terminal.app-main-8:/layout/activity_main.xml"
     }

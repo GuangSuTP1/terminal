@@ -2,5 +2,9 @@
     {
         "merged": "com.liunx.terminal.app-x86Release-5:/layout_activity_main.xml.flat",
         "source": "com.liunx.terminal.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/data/data/com.termux/files/home/.gradle/daemon/9.6.1/com.liunx.terminal.app-x86Release-5:/layout_activity_main.xml.flat",
+        "source": "/data/data/com.termux/files/home/.gradle/daemon/9.6.1/com.liunx.terminal.app-main-6:/layout/activity_main.xml"
     }
 ]

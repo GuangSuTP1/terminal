@@ -1,68 +1,62 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-28:12
-INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:1-26:12
 	package
 		INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml
 	xmlns:tools
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:3:5-51
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:3:3-49
 	android:versionCode
 		INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:5:5-80
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:5:3-78
 	android:name
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:5:22-77
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:5:20-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:6:3-79
 	android:name
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:6:22-78
-uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:7:5-8:40
-	tools:ignore
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:8:9-37
-	android:name
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:7:22-79
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:6:20-76
 application
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:10:5-27:19
-INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:10:5-27:19
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:8:3-25:17
+INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:8:3-25:17
 	android:extractNativeLibs
 		INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml
 	android:requestLegacyExternalStorage
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:14:9-52
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:12:5-48
 	android:label
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:10:5-37
 	android:importantForAutofill
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:15:9-42
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:13:5-38
 	android:allowBackup
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:11:9-36
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:9:5-32
 	android:theme
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:13:9-72
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:11:5-68
 activity#com.liunx.terminal.MainActivity
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:17:9-26:20
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:15:5-24:16
 	android:importantForAutofill
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:20:13-46
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:18:7-40
 	android:windowSoftInputMode
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:21:13-55
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:19:7-49
 	android:exported
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:19:13-36
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:17:7-30
 	android:name
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:18:13-41
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:16:7-35
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:22:13-25:29
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:20:7-23:23
 action#android.intent.action.MAIN
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:23:17-69
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:21:9-61
 	android:name
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:23:25-66
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:21:17-58
 category#android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:22:9-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml:22:19-66
 uses-sdk
 INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /data/data/com.termux/files/home/My_paper/terminal/app/src/main/AndroidManifest.xml

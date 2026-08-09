@@ -1,0 +1,9 @@
+com.liunx.terminal.app-arm64-0 /data/data/com.termux/files/home/My_paper/terminal/app/build/generated/res/pngs/arm64/debug
+com.liunx.terminal.app-arm64-1 /data/data/com.termux/files/home/My_paper/terminal/app/build/generated/res/resValues/arm64/debug
+com.liunx.terminal.app-packageArm64DebugResources-2 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/incremental/arm64Debug/packageArm64DebugResources/merged.dir
+com.liunx.terminal.app-packageArm64DebugResources-3 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/incremental/arm64Debug/packageArm64DebugResources/stripped.dir
+com.liunx.terminal.app-arm64Debug-4 /data/data/com.termux/files/home/My_paper/terminal/app/build/intermediates/merged_res/arm64Debug/mergeArm64DebugResources
+com.liunx.terminal.app-arm64-5 /data/data/com.termux/files/home/My_paper/terminal/app/src/arm64/res
+com.liunx.terminal.app-arm64Debug-6 /data/data/com.termux/files/home/My_paper/terminal/app/src/arm64Debug/res
+com.liunx.terminal.app-debug-7 /data/data/com.termux/files/home/My_paper/terminal/app/src/debug/res
+com.liunx.terminal.app-main-8 /data/data/com.termux/files/home/My_paper/terminal/app/src/main/res

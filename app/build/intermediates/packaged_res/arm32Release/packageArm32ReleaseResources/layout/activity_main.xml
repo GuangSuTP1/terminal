@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#222222">
+    android:background="#222222"
+    android:orientation="vertical">
 
     <ScrollView
         android:id="@+id/scroll_output"
@@ -20,7 +20,6 @@
                 android:id="@+id/output_text"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="#222222"
                 android:padding="8dp"
                 android:textColor="#EEEEEE"
                 android:textSize="14sp"
@@ -31,18 +30,17 @@
     <EditText
         android:id="@+id/input_cmd"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#1E1E1E"
-        android:inputType="text"
+        android:layout_height="48dp"
+        android:background="#1F1F1F"
+        android:gravity="center_vertical"
+        android:hint="输入命令"
+        android:imeOptions="actionSend"
+        android:singleLine="true"
         android:textColor="#EEEEEE"
         android:textColorHint="#666666"
-        android:hint="输入命令"
         android:textSize="14sp"
-        android:typeface="monospace"
-        android:singleLine="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:imeOptions="actionSend">
+        android:typeface="monospace">
+
         <requestFocus />
     </EditText>
 

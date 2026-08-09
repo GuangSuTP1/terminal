@@ -1,0 +1,5 @@
+com.liunx.terminal:string/app_name = 0x7f030000
+com.liunx.terminal:layout/activity_main = 0x7f020000
+com.liunx.terminal:id/scroll_output = 0x7f010002
+com.liunx.terminal:id/output_text = 0x7f010001
+com.liunx.terminal:id/input_cmd = 0x7f010000
