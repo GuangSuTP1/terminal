@@ -4,13 +4,13 @@ android {
   namespace "com.liunx.terminal"
   compileSdk 29
 
-  def baseVersionName = "1.9"
+  def baseVersionName = "1.95"
 
   defaultConfig {
     applicationId "com.liunx.terminal"
     minSdk 16
     targetSdk 28
-    versionCode 3
+    versionCode 4
     versionName "${baseVersionName}"
   }
 
