@@ -1,7 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-id input_cmd
-id output_text
-id scroll_output
-layout activity_main
-string app_name

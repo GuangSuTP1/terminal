@@ -1,4 +1,10 @@
-gradle/
+
+app/build/*
 .gradle/
+gradle/
+build/
 local.properties
-.git/
+
+!app/build/outputs/
+app/build/outputs/*
+!app/build/outputs/apk/

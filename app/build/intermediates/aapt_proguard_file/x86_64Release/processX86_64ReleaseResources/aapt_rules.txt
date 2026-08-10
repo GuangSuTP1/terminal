@@ -1,1 +1,0 @@
--keep class com.liunx.terminal.MainActivity { <init>(); }
