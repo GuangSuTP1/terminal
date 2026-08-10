@@ -12,13 +12,15 @@ import android.os.Handler;
 import android.os.Looper;
 import android.text.Editable;
 import android.view.KeyEvent;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends Activity {
 
@@ -30,6 +32,9 @@ public class MainActivity extends Activity {
   private TextView output;
   private ScrollView scroll;
   private ShellManager shell;
+
+  private final List<String> history = new ArrayList<>();
+  private static final int MAX_HISTORY_SIZE = 50;
 
   private final StringBuilder displayBuffer = new StringBuilder();
   private final Handler uiHandler = new Handler(Looper.getMainLooper());
@@ -57,10 +62,12 @@ public class MainActivity extends Activity {
 
     input.setOnEditorActionListener((v, actionId, event) -> {
       if (actionId == EditorInfo.IME_ACTION_DONE || actionId == EditorInfo.IME_ACTION_SEND
-          || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER && event.getAction() == KeyEvent.ACTION_DOWN)) {
+          || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER
+              && event.getAction() == KeyEvent.ACTION_DOWN)) {
         String cmd = input.getText().toString();
         if (!cmd.isEmpty() && shell != null) {
           shell.writeCommand(cmd);
+          addHistory(cmd);
           input.setText("");
         }
         input.postDelayed(this::showKeyboard, 50);
@@ -69,15 +76,66 @@ public class MainActivity extends Activity {
       return false;
     });
 
-    //长按监听:对整个控制台区域添加长按菜单
-    View.OnLongClickListener longClickListener = v -> {
+    //输出区域长按菜单
+    View.OnLongClickListener outputLongClickListener = v -> {
       showControlMenu();
       return true;
     };
-    scroll.setOnLongClickListener(longClickListener);
-    output.setOnLongClickListener(longClickListener);
+    scroll.setOnLongClickListener(outputLongClickListener);
+    output.setOnLongClickListener(outputLongClickListener);
+
+    //输入框长按弹出历史命令
+    input.setOnLongClickListener(v -> {
+      showHistoryDialog();
+      return true;
+    });
 
     showKeyboard();
+  }
+
+  private void addHistory(String cmd) {
+    if (!history.isEmpty() && history.get(history.size() - 1).equals(cmd)) {
+      return;
+    }
+    history.add(cmd);
+    if (history.size() > MAX_HISTORY_SIZE) {
+      history.remove(0);
+    }
+  }
+
+  private void showHistoryDialog() {
+    if (history.isEmpty()) {
+      return;
+    }
+    String[] items = new String[history.size()];
+    for (int i = 0; i < history.size(); i++) {
+      items[i] = history.get(history.size() - 1 - i);
+    }
+    new AlertDialog.Builder(this)
+        .setTitle("历史命令")
+        .setItems(items, new DialogInterface.OnClickListener() {
+          @Override
+          public void onClick(DialogInterface dialog, int which) {
+            int realIndex = history.size() - 1 - which;
+            String cmd = history.get(realIndex);
+            input.setText(cmd);
+            input.setSelection(cmd.length());
+            showKeyboard();
+          }
+        })
+        .setNegativeButton("取消", null)
+        .show();
+  }
+
+  @Override
+  public boolean dispatchKeyEvent(KeyEvent event) {
+    if (event.getAction() == KeyEvent.ACTION_DOWN) {
+      if (event.getKeyCode() == KeyEvent.KEYCODE_MENU) {
+        showControlMenu();
+        return true;  //电视端焦点切换不到控制台,所以用菜单键来弥补
+      }
+    }
+    return super.dispatchKeyEvent(event);
   }
 
   private void showControlMenu() {
@@ -89,8 +147,8 @@ public class MainActivity extends Activity {
           public void onClick(DialogInterface dialog, int which) {
             if (shell == null) return;
             switch (which) {
-              case 0: shell.writeCharacter((char) 0x03); break; // Ctrl+C
-              case 1: shell.writeCharacter((char) 0x04); break; // Ctrl+D
+              case 0: shell.writeCharacter((char) 0x03); break;
+              case 1: shell.writeCharacter((char) 0x04); break;
             }
           }
         })
@@ -170,7 +228,12 @@ public class MainActivity extends Activity {
       }
       if (end > 0) editable.delete(0, end);
     }
-    scroll.post(() -> scroll.fullScroll(ScrollView.FOCUS_DOWN));
+    scroll.post(() -> {
+      scroll.fullScroll(ScrollView.FOCUS_DOWN);
+      if (!input.hasFocus()) {
+        input.requestFocus();
+      }
+    });
   }
 
   @Override
